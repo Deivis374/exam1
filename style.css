@@ -1,6 +1,7 @@
 * {
     font-family: 'Roboto', sans-serif;
 }
+
 body {
     width: 1280px;
     margin: 0px auto;
@@ -52,6 +53,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: stretch;
+    margin: 30px;
 
 }
 
@@ -207,12 +209,20 @@ button {
     display: grid;
     grid-template-columns: 50% 50%;
 }
+
 .social {
     gap: 20%;
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
     width: 70px;
 }
+
+@media only screen and (max-width: 600px) {
+    body {
+        overflow-x: hidden;
+    }
+}
+
 @media only screen and (max-width: 600px) {
     .companies {
         grid-template-rows: 50% 50%;
@@ -232,4 +242,79 @@ button {
         width: 340px;
         height: 172px;
     }
+}
+
+@media only screen and (max-width: 600px) {
+    .product-img img {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .product {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 90% 90% 90% 90%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .item {
+        max-width: 95%;
+        margin: 50px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+
+    p.category,
+    p.bid-title {
+        color: orange;
+        font-size: 32px;
+    }
+}
+@media only screen and (max-width: 600px) {
+
+    p.category,
+    p.id, p.days {
+        font-size: 32px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+
+    h2.name,
+    h2.bid {
+        font-size: 50px;
+        font-weight: 600;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .eth {
+        float: left;
+        margin-left: 135px;
+        width: 10%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .title {
+        font-size: 35px;
+        color: #e43297;
+        font-weight: 600;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .title-2 {
+        font-size: 60px;
+        font-weight: bold;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+.text-left {
+    font-size: 31px;
+}
 }
