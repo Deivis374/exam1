@@ -12,14 +12,27 @@ margin:0px auto;
     color: #656565;
     text-decoration: none;
   }
+  p.category {
+    color: orange;
+  }
+  h2.name {
+    font-size: 19px;
+    font-weight: 600;
+  }
+  h2.bid {
+    font-size: 19px;
+    font-weight: 600;
+  }
   ul {
     list-style-type: none;
     display: flex;
     width: 100%;
     justify-content: space-evenly;
   }
-  
-
+  .eth {
+    float: left;
+    margin-left: 10px;
+  }
   
  .logo img {
     width: 100%;
