@@ -207,7 +207,12 @@ button {
     display: grid;
     grid-template-columns: 50% 50%;
 }
-
+.social {
+    gap: 20%;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    width: 70px;
+}
 @media only screen and (max-width: 600px) {
     .companies {
         grid-template-rows: 50% 50%;
