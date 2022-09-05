@@ -1,51 +1,105 @@
-body {
-    width:1280px;
-margin:0px auto;
+* {
+    font-family: 'Roboto', sans-serif;
 }
+body {
+    width: 1280px;
+    margin: 0px auto;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+    position: relative;
+}
+
+/* Hide the links inside the navigation menu (except for logo/home) */
+.topnav #myLinks {
+    display: none;
+}
+
+/* Style navigation menu links */
+.topnav a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+}
+
+/* Style the hamburger menu */
+.topnav a.icon {
+    background: black;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+/* Add a grey background color on mouse-over */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Style the active link (or home/logo) */
+.active {
+    background-color: #04AA6D;
+    color: white;
+}
+
+
 .headerContainer {
     display: flex;
     justify-content: space-between;
     align-items: stretch;
 
-  }
-  a {
+}
+
+a {
     color: #656565;
     text-decoration: none;
-  }
-  p.category {
+}
+
+p.category {
     color: orange;
-  }
-  h2.name {
+}
+
+h2.name {
     font-size: 19px;
     font-weight: 600;
-  }
-  h2.bid {
+}
+
+h2.bid {
     font-size: 19px;
     font-weight: 600;
-  }
-  ul {
+}
+
+ul {
     list-style-type: none;
     display: flex;
     width: 100%;
     justify-content: space-evenly;
-  }
-  .eth {
+}
+
+.eth {
     float: left;
     margin-left: 10px;
-  }
-  
- .logo img {
+}
+
+.logo img {
     width: 100%;
     height: 100%;
-  }
+}
 
 .box1 {
     display: inline-flex;
 }
+
 .text p {
     font-size: 12px;
     color: #e43297;
 }
+
 .text h2 {
     font-size: 56px;
 }
@@ -53,28 +107,30 @@ margin:0px auto;
 .column {
     float: left;
     width: 50%;
-  }
+}
 
-  .column {
+.column {
     float: left;
-  }
-  
+}
+
 .left {
     margin-left: 20px;
-  }
-  
-  .right {
+}
+
+.right {
     width: 75%;
     text-align: right;
-  }
-  .banner {
+}
+
+.banner {
     position: relative;
     text-align: center;
     color: black;
 
 
-  }
-  .centered {
+}
+
+.centered {
     position: absolute;
     top: 64%;
     left: 22%;
@@ -82,62 +138,93 @@ margin:0px auto;
     font-size: 26px;
     text-align: left;
 
-  }
-  .companies {
+}
+
+.companies {
     display: grid;
     grid-template-columns: 20% 20% 20% 20% 20%;
-  }
-  .description {
+}
+
+.description {
     display: grid;
     grid-template-columns: 50% 50%;
     background-color: #eee;
     margin-top: -5px;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
-  }
-  .product {
+}
+
+.product {
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
-  }
-  .item {
+}
+
+.item {
     max-width: 290px;
-  }
-  .launching {
+}
+
+.launching {
     display: grid;
     grid-template-columns: 60% 30%;
 
-  }
-  .row {
+}
+
+.row {
     margin-top: 100px;
-  }
-  .title {
+}
+
+.title {
     font-size: 18px;
     color: #e43297;
     font-weight: 600;
-  }
+}
+
 .title-2 {
     font-size: 60px;
     font-weight: bold;
 }
+
 .text-left {
     font-size: 25px;
 }
 
 button {
-  background: none;
-  text-decoration: inherit;
-  font-family: system-ui;
-  font-size: 1rem;
-  padding: 1rem 2rem;
-  border-radius: 30px;
+    background: none;
+    text-decoration: inherit;
+    font-family: system-ui;
+    font-size: 1rem;
+    padding: 1rem 2rem;
+    border-radius: 30px;
 }
 
 .border-gradient {
-  border: 10px solid;
-  border-image-slice: 1;
-  border-width: 5px;
+    border: 10px solid;
+    border-image-slice: 1;
+    border-width: 5px;
 }
+
 .footer {
     display: grid;
     grid-template-columns: 50% 50%;
+}
+
+@media only screen and (max-width: 600px) {
+    .companies {
+        grid-template-rows: 50% 50%;
+        grid-template-columns: 50% 50%;
+        margin: 100px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .companies :nth-last-child(1) {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .companies img {
+        width: 340px;
+        height: 172px;
+    }
 }
